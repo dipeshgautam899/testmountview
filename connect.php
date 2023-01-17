@@ -20,6 +20,9 @@
 		$execval = $stmt->execute();
 		// echo $execval;
 
+			ini_set('SMTP','smtp.gmail.com');
+			ini_set('smtp_port','tls');
+
 
 		
 			$to = $email;
@@ -48,8 +51,7 @@
 				echo "Registration completed successfully...<br>Our staff will connect with you shortly.<br>A confirmation email has been sent to $email.";
 				header('location:thankyou.html');
 			} else {
-				echo "Error: Email could not be sent.";
-			
+				echo "Error: Email could not be sent.";		
 
 		}
 		
@@ -59,4 +61,6 @@
 	
 	
 ?>
+  
+
   
