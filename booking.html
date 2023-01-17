@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Now</title>
+
+  <link rel="icon" type="image/png" href="images/Logo.png">
+
+  <!-- Bootstrap 5 CDN Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+  <header class="header_wrapper">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/Logo.png" class="img-fluid" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-stream navbar-toggler-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav menu-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#rooms">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#services">Services</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item mt-3 mt-lg-0">
+              <a class="main-btn" href="#">Book Direct & Save</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="images/gallery/DSC00810 .jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption ">
+          <h5>Welcome to Mount View Pokhara</h5>
+          <p>A true manifestation of home away from home.</p>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="main_bg">
+    <div class="form">
+      <div class="form-text">
+
+        <h1>FILL THE FORM BELOW TO RESERVE YOUR SPACE<span><img src="art-1.png" alt=""></span></h1>
+
+      </div>
+      <div class="main-form">
+        <form action="booking.php" method="post">
+          <div>
+            <label for="fullName">Full name *</label>
+            <input type="text" name="name" id="name" placeholder="Enter Fullname..." required>
+          </div>
+          <div>
+
+            <label for="email">Email Address *</label>
+            <input type="email" name="email" id="name" placeholder="Provide Email Address..." required>
+          </div>
+          <div>
+            <label for="checkindate">Checkin date *</label>
+
+            <input type="date" name="checkindate" id="date" placeholder="date" required>           
+                       
+          </div>
+          <div>
+            <label for="checkoutdate">Checkout date *</label>
+
+            <input type="date" name="checkoutdate" id="date" placeholder="date" required>
+          </div>
+          <div>
+            <label for="rooms">Select our Rooms *</label>
+            <select type="text" name="rooms" id="rooms" placeholder="Select our Rooms..." required>
+              <option value="Queen Room">Queen Room</option>
+              <option value="Junior Suite with Balcony">Junior Suite with Balcony</option>
+              <option value="Honeymon Suite">Honeymon Suite</option>
+              <option value="Family room with Balcony">Family room with Balcony</option>
+              <option value="Deluxe Single room with Balcony">Deluxe Double room with Balcony</option>
+            </select>  
+          </div>
+
+          <div>
+            <label for="number">Total no. of people *</label>
+            <!-- <---this is the select option--->
+
+            <input type="number" name="number" id="number" placeholder="Provide total no of people..." required>
+            <!-- <---this is the select option--->
+          </div> 
+                 
+
+          <div>
+            <label for="contact">Contact Number *</label>
+            <input type="tel" name="contact" id="number" pattern="[0-9]{10}"
+              placeholder="Provide your contact no..." required>
+          </div>
+         
+          
+         
+        
+         
+          
+         
+          <div id="submit">
+            <input type="submit" value="SUBMIT" id="submit">
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section class="footer" id="contact">
+    <div class="col">
+      <div class="logo">
+        <img src="images/Logo.png" alt="" />
+      </div>
+
+
+
+    </div>
+
+    <div class="col">
+
+
+      <h4>Contact Info</h4>
+      <div class="contact-item">
+        <span>
+          <i class="fas fa-map-marker-alt"></i>
+        </span>
+        <span>
+          Lake Side-6, Pokhara
+        </span>
+      </div>
+      <div class="contact-item">
+        <span>
+          <i class="fas fa-phone-alt"></i>
+        </span>
+        <span>
+          +977-061-464200, 464210, 466211
+        </span>
+      </div>
+      <div class="contact-item">
+        <span>
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span>
+          mountviewpokhara@gmail.com
+        </span>
+      </div>
+
+
+
+    </div>
+    <div class="col">
+      <h4>City Office </h4>
+
+      <div class="contact-item">
+        <span>
+          <i class="fas fa-map-marker-alt"></i>
+        </span>
+        <span>
+          Thamel, Kathmandu
+        </span>
+      </div>
+      <div class="contact-item">
+        <span>
+          <i class="fas fa-phone-alt"></i>
+        </span>
+        <span>
+          +977-1-4413964, 4413658
+        </span>
+      </div>
+      <div class="contact-item">
+        <span>
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span>
+          info@mountviewpokhara.com
+        </span>
+      </div>
+      <div class="follow">
+
+        <div class="icon">
+          <a href="https://www.facebook.com/mountviewpokhara/"><i class="fab fa-facebook"></i></a>
+
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.993051113046!2d83.95738111439675!3d28.207523709941217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995951c0eed05e1%3A0x2797a7347f94ca8c!2sHotel%20Mount%20View%20Pokhara!5e0!3m2!1sen!2snp!4v1665728912661!5m2!1sen!2snp"
+        width="200" height="150" margin-right="15px" margin-top="15px" style="border:0;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    </div>
+
+
+
+
+    </div>
+    <div class="line">
+      <span class="divider"></span>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <section class="footer copyright">
+    <p>
+      © 2022, Hotel Mount View Pokhara|All Rights
+      Reserved.
+    </p>
+    <span>Designed by:
+      <a href="https://www.sait.com.np/">
+        <!-- <span class="logo">
+        <img src="images/S.A I.T Logo. Png.png" >
+      </span> -->SAIT Solution and Trade Concern
+      </a>
+    </span>
+  </section>
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script> 
+
+</body>
+
+</html>
