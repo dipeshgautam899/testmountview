@@ -21,15 +21,13 @@
 		// echo $execval;
 
 
-		if ($execval) {
-			// Set email variables
+		
 			$to = $email;
 			$subject = 'Booking Confirmation';
 			$headers = "MIME-Version: 1.0\r\n";
 			$headers .= "Content-type: text/html; charset=utf-8\r\n";
 			$headers .= 'From: Mount View Hotel <dipeshgautam899@gmail.com>' . "\r\n";
-			
-			// Set email body
+
 			$message = '<html><body>';
 			$message .= '<h1>Booking Confirmation</h1>';
 			$message .= '<p>Thank you for booking with us. Here are the details of your booking:</p>';
@@ -46,15 +44,13 @@
 			$message .= '</body></html>';
 
 
-
 			if (mail($to, $subject, $message, $headers)) {
 				echo "Registration completed successfully...<br>Our staff will connect with you shortly.<br>A confirmation email has been sent to $email.";
 				header('location:thankyou.html');
 			} else {
 				echo "Error: Email could not be sent.";
-			}
-		} else {
-			echo "Error: Registration could not be completed.";
+			
+
 		}
 		
 		$stmt->close();
